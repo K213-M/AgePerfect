@@ -101,10 +101,8 @@ INSERT INTO courses (name, description, duration) VALUES
   ('Class 11-12 (Intermediate)', 'Higher secondary education in Science and Arts groups.', '2 years')
 ON CONFLICT DO NOTHING;
 
-INSERT INTO teachers (name, designation, bio) VALUES
-  ('Sir Dasrat', 'Founder & Principal', 'Placeholder bio — update with real information from the admin dashboard.'),
-  ('Teacher Name 1', 'Subject Teacher', 'Placeholder bio — update with real information from the admin dashboard.'),
-  ('Teacher Name 2', 'Subject Teacher', 'Placeholder bio — update with real information from the admin dashboard.')
+INSERT INTO teachers (name, designation, bio, photo_url) VALUES
+  ('Sir Dasrat Kumaras', 'Biology Specialist', 'Expert in Biology, Botany and Zoology. Experienced Biology educator who helps students prepare for board exams and entrance tests.', '/uploads/photos/dasrat-kumaras.jpg')
 ON CONFLICT DO NOTHING;
 
 INSERT INTO testimonials (student_name, course, testimonial, rating) VALUES
